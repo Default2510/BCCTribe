@@ -1,0 +1,40 @@
+{ "devotions": [
+		{
+			"date":				"2015-04-27",
+			"author":			"Robert",
+			"passageLookup":	"John 1",
+			"versions":			["NIV","ESV"],
+			"preNotes":			"New verse today.",
+			"postNotes":		"I <em>like</em> this passage."
+		},
+		{
+			"date":				"2015-04-26",
+			"author":			"Robert",
+			"passageLookup":	"John 12",
+			"preNotes":			"New verse today.",
+			"postNotes":		"I <em>like</em> this passage."
+		},
+		{
+			"date":				"2015-04-25",
+			"author":			"Robert",
+			"passageLookup":	"John 10",
+			"preNotes":			"New verse today.",
+			"postNotes":		"I <em>like</em> this passage."
+		},
+		{
+			"date":				"2015-04-23",
+			"author":			"Robert",
+			"passageLookup":	"Romans 12:1-5,10;13:1;John 3:16",
+			"versions":			["NIV","AMP"],
+			"preNotes":			"Here is the verses for today.",
+			"postNotes":		"This is my thoughts on the verses for today."
+		},
+		{
+			"date":				"2015-04-22",
+			"author":			"Robert",
+			"passageLookup":	"Psalm 24:3-4",
+			"preNotes":			"My life verse.",
+			"postNotes":		"Memorized this as a <strong>kid</strong>."
+		}
+	]
+}

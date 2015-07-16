@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8" />
+	<title>BCC Tribe</title>
+	<meta name="description" content="To see a generation pursue God together, convinced of the truth and living in authentic faith. We enact this vision by Living, Building, and Expanding God's kingdom." />
+	<meta name="keywords" content="Tribe, Bellevue Christian Center, Young Adult, Christian, Church, 18 to 30, Bellevue, Live, Build, Expand, Kingdom, Devotions, Small Groups, Missions, Community, Faith, Become Together, Relationships, Jesus, God, Assemblies of God" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<!-- Facebook meta tags -->
+	<meta property="og:title" content="BCC Tribe" />
+	<meta property="og:url" content="http://www.bcctribe.com/" />
+	<meta property="og:description" content="We are what we become together." />
+	<meta property="og:type" content="website" /> 
+	<meta property="og:image" content="http://www.bcctribe.com/app/assets/images/logo-tribe.jpg" /> 
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="./app/assets/css/reset.css" />
+	<link rel="stylesheet" href="./app/assets/libs/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./app/assets/css/main.css" />
+	
+</head>
+<body ng-app="tribeApp">
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MHPBLN"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MHPBLN');</script>
+	<!-- End Google Tag Manager -->
+
+	<div class="hidden"><img src="/app/assets/images/logo-tribe.jpg" alt="BCC Tribe" /></div>
+	<div class="container-fluid">
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com>upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="hidden-xs shadow-header"></div>
+		<header>
+			<div ng-include="'./app/views/includes/header.html'"></div>
+		</header>
+		
+		<main class="row">
+			<div ng-view="" autoscroll="true"></div>
+		</main>
+		
+		<footer>
+			<div ng-include="'./app/views/includes/footer.html'"></div>
+		</footer>
+	</div>
+	
+	<!-- LIBS -->
+	<script src="./app/assets/libs/angular/angular.min.js"></script>
+	<script src="./app/assets/libs/angular/angular-animate.min.js"></script>
+	<script src="./app/assets/libs/angular/angular-aria.min.js"></script>
+	<script src="./app/assets/libs/angular/angular-cookies.min.js"></script>
+	<script src="./app/assets/libs/angular/angular-loader.min.js"></script>
+	<script src="./app/assets/libs/angular/angular-messages.min.js"></script>
+	<script src="./app/assets/libs/angular/angular-resource.min.js"></script>
+	<script src="./app/assets/libs/angular/angular-route.min.js"></script>
+	<script src="./app/assets/libs/angular/angular-sanitize.min.js"></script>
+	<script src="./app/assets/libs/angular/angular-touch.min.js"></script>
+	<script src="./app/assets/libs/angular/angular-ui-bootstrap-tpls.min.js"></script>
+	<script src="./app/assets/libs/html5shiv/html5shiv.min.js"></script>
+	<script src="./app/assets/libs/picturefill/picturefill.min.js"></script>
+	<!-- SCRIPTS -->
+	<script src="./app/assets/js/app.js"></script>
+	<script src="./app/assets/js/main.js"></script>
+	<!-- SERVICES -->
+	<script src="./app/services/services.js"></script>
+	<!-- CONTROLLERS -->
+	<script src="./app/controllers/header.js"></script>
+	<script src="./app/controllers/main.js"></script>
+	<script src="./app/controllers/our-mission.js"></script>
+	<script src="./app/controllers/devotions.js"></script>
+	<script src="./app/controllers/small-groups.js"></script>
+	<script src="./app/controllers/our-leaders.js"></script>
+	<script src="./app/controllers/events.js"></script>
+	<script src="./app/controllers/influence-assessment.js"></script>
+	<script src="./app/controllers/missions.js"></script>
+	<script src="./app/controllers/first-fruits.js"></script>
+	<!-- Google Analytics Tracking Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-64415423-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

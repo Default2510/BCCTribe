@@ -1,0 +1,59 @@
+<div ng-controller="HeaderCtrl">
+	<nav class="text-center">
+		<div class="hidden-xs col-sm-2 col-md-offset-1">
+			<span class="dropdown" dropdown on-toggle="toggled(open)">
+				<a class="dropdown-toggle" dropdown-toggle>
+					Our Mission<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#/our-mission/live">Live</a></li>
+					<li><a href="#/our-mission/build">Build</a></li>
+					<li><a href="#/our-mission/expand">Expand</a></li>
+				</ul>
+			</span>
+		</div>
+		<div class="hidden-xs col-sm-2">
+			<a href="#/devotions">Devotions</a>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-md-2 logo">
+			<div class="shadow-logo"></div>
+			<div>
+				<a href="#/" class="hidden-xs"><img src="app/assets/images/logo-tribe-name.svg" alt="Tribe logo" class="logo-image" /></a>
+				<a class="visible-xs" ng-click="collapseMobileNav = !collapseMobileNav"><img src="app/assets/images/logo-tribe-name.svg" alt="Tribe" class="logo-image" /></a>
+			</div>
+		</div>
+		<div class="hidden-xs col-sm-2">
+			<span class="dropdown" dropdown on-toggle="toggled(open)">
+				<a class="dropdown-toggle" dropdown-toggle>
+					Community<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#/small-groups">Small Groups</a></li>
+					<li><a href="#/our-leaders">Our Leaders</a></li>
+				</ul>
+			</span>
+		</div>
+		<div class="hidden-xs col-sm-2">
+			<span class="dropdown" dropdown on-toggle="toggled(open)">
+				<a class="dropdown-toggle" dropdown-toggle>
+					Events<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#/events">Events</a></li>
+					<li><a href="#/influence-assessment">Influence Assessment</a></li>
+					<li><a href="#/missions">Missions</a></li>
+					<li><a href="http://www.bellevuechristian.com/giving/" target="_blank">Giving</a></li>
+					<li><a href="https://www.surveymonkey.com/r/TZV9GWR" target="_blank">Get Involved</a></li>
+				</ul>
+			</span>
+		</div>
+	</nav>
+	<nav role="navigation" collapse="collapseMobileNav" class="visible-xs mobile-nav">
+		<div class="list-group">
+			<a class="list-group-item" href="#/">Tribe</a>
+			<a class="list-group-item" href="#/our-mission/live">Live</a>
+			<a class="list-group-item" href="#/our-mission/build">Build</a>
+			<a class="list-group-item" href="#/our-mission/expand">Expand</a>
+			<a class="list-group-item" href="#/devotions">Devotions</a>
+			<a class="list-group-item" href="#/small-groups">Small Groups</a>
+			<a class="list-group-item" href="#/events">Events</a>
+		</div>
+	</nav>
+</div>

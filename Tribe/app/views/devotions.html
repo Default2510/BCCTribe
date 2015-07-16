@@ -1,0 +1,30 @@
+<div class="col-xs-12 content devotions live hero">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-1 pull-right"></div>
+		<div class="col-xs-12 col-sm-7 col-md-6 pull-right">
+			<h2 class="color-live">Devotions</h2>
+			<p class="text-dark">How are you doing today? Find a word or phrase below that describes how you are feeling. As you listen, let God speak to you about how to live today.</p>
+			<div class="row devotion-links">
+				<div class="col-xs-12 col-sm-6">
+					<div class="icon icon-medium live no-hover"></div>
+					<a href="#/devotions/ashamed" ng-class="{'color-live': feeling=='ashamed'}">Ashamed</a>
+					<a href="#/devotions/uncertain-day" ng-class="{'color-live': feeling=='uncertain-day'}">Uncertain</a>
+					<a href="#/devotions/victorious" ng-class="{'color-live': feeling=='victorious'}">Victorious</a>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="icon icon-medium live no-hover"></div>
+					<a href="#/devotions/needing-rest" ng-class="{'color-live': feeling=='needing-rest'}">Restless</a>
+					<a href="#/devotions/promising-perspective" ng-class="{'color-live': feeling=='promising-perspective'}">Hopeless</a>
+				</div>
+			</div>
+			<audio ng-if="audio.path" controls class="full-width">
+				<source ng-if="audio.path" src="{{audio.path}}" type="audio/mpeg">
+				Your browser does not support the audio tag.
+			</audio>
+		</div>
+		<div class="col-xs-12 col-sm-4 col-sm-offset-1 bg-blur-xs bg-lighten">
+			<h3 class="text-dark">A Life Devoted</h3>
+			<p class="text-dark">These guided devotions will help you get started in your Kingdom Living. They are simple audio exercises that can help you find an on ramp for your own. Devotions are simple scripture-based expressions of understanding, encouragement, or practical guidance. The devotions offered here are only a few minutes long so you can do them any time at any place during your day. New devotions are provided seasonally, so be sure to check back often. If you have any request for devotion topics or resources, be sure to email us at <a href="mailto:BCCTribe@gmail.com" class="color-live">BCCTribe@gmail.com</a>.</p>
+		</div>
+	</div>
+</div>

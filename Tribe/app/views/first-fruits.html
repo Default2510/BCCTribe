@@ -1,0 +1,12 @@
+<div class="col-xs-12 content first-fruits hero">
+	<ul class="transparent-white">
+		<li>{{dailyDevotion.date}} by {{dailyDevotion.author}}</li>
+		<li ng-if="dailyDevotion.preNotes"><div ng-bind-html="dailyDevotion.preNotes"></div></li>
+		<li ng-repeat="passage in dailyDevotion.passages">{{passage.reference}}
+			<blockquote ng-bind-html="passage.text"></blockquote></li>
+		<li ng-if="dailyDevotion.versions">Read also in these versions: <span ng-repeat="version in dailyDevotion.versions">
+				(<a href="{{bibleGatewayURL}}?search={{dailyDevotion.passageLookup}}&version={{version}}" target="_blank">{{version}}</a>)
+			</span></li>
+		<li ng-if="dailyDevotion.postNotes"><div ng-bind-html="dailyDevotion.postNotes"></div></li>
+	</ul>
+</div>

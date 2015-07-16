@@ -1,0 +1,37 @@
+<div class="col-xs-12 content events expand hero">
+	<div class="row">
+		<div class="col-xs-12 col-sm-8 col-md-6 col-md-offset-1">
+			<h2 class="">Events</h2>
+			<p>Are you looking for opportunities to get to know others in Tribe and have a blast together? Our events are built for exactly that. Check here often to get a list of times and places for events around the city.</p>
+			<table class="table table-hover table-events" ng-class="{'table-events-today': eventToday}">
+				<thead>
+					<tr>
+						<th class="h4">Date</th>
+						<th class="h4">Event</th>
+						<th class="h4">Time</th>
+						<th class="h4">Place</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="event in events | orderBy: 'date'">
+						<th><span ng-show="event.today" title="Today" class="glyphicon glyphicon-bell pull-left"></span>{{event.date | date:"MMMM d"}}</th>
+						<td>{{event.event}} <span ng-show="event.service" class="icon icon-small tribe text-light"></span></td>
+						<td>{{event.time}}</td>
+						<td>{{event.place}}</td>
+					</tr>
+					<tr ng-show="!events.length">
+						<td colspan="4">No Events to Display at this time.</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr ng-repeat="event in seekFirstEvents | orderBy: 'date'">
+						<th><span ng-show="event.today" title="Today" class="glyphicon glyphicon-bell pull-left"></span>{{event.date | date:"MMMM d"}}</th>
+						<td>{{event.event}}</td>
+						<td>{{event.time}}</td>
+						<td>{{event.place}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
