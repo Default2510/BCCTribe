@@ -13,25 +13,30 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="event in events | orderBy: 'date'">
-						<th><span ng-show="event.today" title="Today" class="glyphicon glyphicon-bell pull-left"></span>{{event.date | date:"MMMM d"}}</th>
-						<td>{{event.event}} <span ng-show="event.service" class="icon icon-small tribe text-light"></span></td>
-						<td>{{event.time}}</td>
-						<td>{{event.place}}</td>
+					<tr ng-repeat="event in events | orderBy: 'start.dateTime' | limitTo: 6">
+						<th><span ng-show="event.today" title="Today" class="glyphicon glyphicon-bell pull-left"></span>{{event.start.dateTime | date:"MMMM d"}}</th>
+						<td>{{event.summary}} <span ng-show="event.service" class="icon icon-small tribe text-light"></span></td>
+						<td>{{event.start.dateTime | date:"h:mm a"}}</td>
+						<td>{{event.location}}</td>
 					</tr>
 					<tr ng-show="!events.length">
 						<td colspan="4">No Events to Display at this time.</td>
 					</tr>
 				</tbody>
 				<tbody>
-					<tr ng-repeat="event in seekFirstEvents | orderBy: 'date'">
-						<th><span ng-show="event.today" title="Today" class="glyphicon glyphicon-bell pull-left"></span>{{event.date | date:"MMMM d"}}</th>
-						<td>{{event.event}}</td>
-						<td>{{event.time}}</td>
-						<td>{{event.place}}</td>
+					<tr ng-repeat="event in recurringEvents | orderBy: 'start.dateTime'">
+						<th><span ng-show="event.today" title="Today" class="glyphicon glyphicon-bell pull-left"></span>{{event.start.dateTime | date:"MMMM d"}}</th>
+						<td>{{event.summary}}</td>
+						<td>{{event.start.dateTime | date:"h:mm a"}}</td>
+						<td>{{event.location}}</td>
 					</tr>
 				</tbody>
 			</table>
+			<div class="quick-links">
+				<nav>
+					<a href="https://www.google.com/calendar/ical/bcctribe%40gmail.com/public/basic.ics" target="_blank" class="button-flat">Import Calendar</a>
+				</nav>
+			</div>
 		</div>
 	</div>
 </div>
