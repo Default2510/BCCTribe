@@ -13,7 +13,7 @@
 		$rootScope.$broadcast("refreshHeader", {});
 		$window.ga('send', 'pageview', { page: $location.url() });
 		
-		$scope.values = ['ashamed','needing-rest','promising-perspective','uncertain-day','victorious'];
+		$scope.values = ['ashamed','everyday-worship','fear','needing-rest','promising-perspective','uncertain-day','victorious'];
 		
 		$scope.feeling = $routeParams.feeling;
 		$scope.audio = {};
